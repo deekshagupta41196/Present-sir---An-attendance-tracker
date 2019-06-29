@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/face"
+            android:layout_weight="0.1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <TextView
+                    android:layout_weight="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name="
+                    android:textColor="#166CED"
+                    android:textSize="20dp"
+                    />
+            <TextView
+                android:layout_weight="0.9"
+                android:id="@+id/txtsname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tom Cruise"
+                android:textColor="#166CED"
+                android:textSize="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID="
+                    android:layout_weight="0.1"
+                    android:textColor="#D64530" />
+            <TextView
+                android:id="@+id/txtsid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D64530"
+                android:layout_weight="0.9"
+                android:text="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present="
+                android:textColor="#166CED"
+                android:textSize="20dp" />
+                <TextView
+                    android:layout_weight="0.9"
+                    android:id="@+id/txtpresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#166CED"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Classes="
+                    android:textColor="#166CED"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txttotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#166CED"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
